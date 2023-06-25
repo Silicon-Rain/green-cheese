@@ -14,6 +14,7 @@ const options = {
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MWZmMTAwYTFjOGRjNThlNTIxNTY4ZDM5MjYzOGYyYyIsInN1YiI6IjYzOTczOTMxYTBmMWEyMDBlMmFhYzhhZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KsFIJHkQqCqwlSXNzrzMXnJ0E0B5cFUQZGlltykEonE'
     }
   };    
+    
   
   fetch('https://api.themoviedb.org/3/trending/movie/day?language=en-US', options)
     .then(response => response.json())

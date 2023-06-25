@@ -1,15 +1,45 @@
-#root {
-  height: 100vh;
-  width: 98vw;
-  display: flex;
-  flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
   flex-wrap: wrap;
+  box-sizing: border-box;
+}
+#root {
+  width: 100vw;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 
 img {
-  height:100px;
-  width: 100px;
+  height:50px;
+  width: 50px;
+}
+
+.navbar {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#vid-cam {
+  height: 90%;
+  width: 5%;
+  background-image: url("../public/video-camera.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.navelem {
+  border: 2px solid black;
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 

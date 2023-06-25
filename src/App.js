@@ -1,5 +1,6 @@
 import Card from "./Card";
 import Data from "./Data";
+import Navbar from "./Navbar";
 
 function App() {
   const cardRender = (value,idx) => {
@@ -7,6 +8,7 @@ function App() {
   }
   return (
     <>
+      <Navbar/>
       {Data.map(cardRender)}
     </>
   ); 
