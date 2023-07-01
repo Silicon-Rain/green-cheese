@@ -1,15 +1,21 @@
-import Card from "./Card";
-import Data from "./Data";
-import Navbar from "./Navbar";
+import Navbar from "./Components/Navbar"
+import Intro from "./Components/Intro";
+import Trending from "./Components/Trending"
+import Popular from "./Components/Popular";
+import MovieDetail from "./Components/MovieDetail";
+import React from "react";
+import Upcoming from "./Components/Upcoming";
 
 function App() {
-  const cardRender = (value,idx) => {
-    return <Card key={idx} imgsrc={value.imgsrc} title={value.title} />
-  }
+  
   return (
     <>
       <Navbar/>
-      {Data.map(cardRender)}
+      <Intro/>
+      <Trending/>
+      <Popular/>
+      <Upcoming/>
+      <MovieDetail/>
     </>
   ); 
 }
