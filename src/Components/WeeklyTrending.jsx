@@ -4,7 +4,7 @@ import options from "../Data/Options";
 
 const WeeklyTrending = () => {
     let [data, setData] = useState([]);
-    const getCovidData = async () => {
+    const getData = async () => {
         try {
             const res = await fetch('https://api.themoviedb.org/3/trending/movie/week?language=en-US', options);
             const actualdata = await res.json();
@@ -14,7 +14,7 @@ const WeeklyTrending = () => {
         }           
     }
     useEffect(() => {
-        getCovidData();
+        getData();
     },[]);
     return (
     <div className="card-holder">
